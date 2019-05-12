@@ -4,43 +4,128 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab3
+namespace lab6
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int Speedlimit;
-            int speed;
-
-            Speedlimit = 35;
-            speed = 42;
-
-            if (speed > Speedlimit)
             {
-                Console.WriteLine("SlowDown!");
+                int[] array = new int[12];
+
+                Console.WriteLine("{0}{1,15}", "Index", "Month");
+                {
+                    String[] month = new string[12];
+                    month[0] = "January";
+                    month[1] = "Febraury";
+                    month[2] = "March";
+                    month[3] = "April";
+                    month[4] = "May";
+                    month[5] = "June";
+                    month[6] = "July";
+                    month[7] = "August";
+                    month[8] = "September";
+                    month[9] = "October";
+                    month[10] = "November";
+                    month[11] = "December";
+                    {
+                        for (int counter = 0; counter < array.Length; ++counter) ;
+                        Console.WriteLine("{0}{1,15}", counter, string[month]);
+
+                    }
+                }
+            }
+        }
+    }
+    namespace Lab06question3
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                string[] seasons = { "Winter", "Spring", "Summer", "Autumn" };
+                Console.WriteLine("The Four Seasons");
+                foreach (string season in seasons)
+                {
+                    Console.WriteLine(season);
+
+                }
+            }
+        }
+        namespace Lab06question4
+        {
+            class Program
+            {
+                static void Main(string[] args)
+                {
+                    int[] array;
+                    array = new int[1000];
+                    {
+                        Random randomNumbers = new Random(1000);
+                        int randomNumber = randomNumber.Next();
+                        {
+                            foreach (randomNumber in randomNumber.Next(0, 100)) ;  // place this line in the loop
+                            Console.WriteLine("{0}");
+                        }
+                    }
+                }
             }
 
-            Console.WriteLine("Input temperature in Fahrenheit: ");
-            int fah = int.Parse(Console.ReadLine());
-            Console.WriteLine();
-
-            int FtoC = ((fah - 32) / 9) * 5;
-            Console.WriteLine("Temperature in Celsius is {0}: ", FtoC);
-            Console.ReadLine();
-
-            int i = 1;
-
-            while (i < 11)
+        }
+        namespace Lab06questionsnames
+        {
+            class Program
             {
-                Console.Write("While Output: ");
-                Console.WriteLine(i);
-                i++;
+                static void Main(string[] args)
+                {
+                    string[] names = { "Al Dente", "Anna Graham", "Earle Bird", "Ginger Rayle", "Iona Ford" };
+
+                    int i = 0;
+                    {
+                        while (i < names.Length)
+
+                            Console.WriteLine(string[names]);
+
+                    }
+                }
+            }
+
+        }
+        namespace Lab06questionsn6
+        {
+            class Program
+            {
+                static void Main(string[] args)
+                {
+
+                    string[] names = new string[5] { "Al Dente", "Anna Graham", "Earle Bird", "Ginger Rayle", "Iona Ford" };
+                    int i = 0;
+                    {
+                        for (int i = 0; i < names.Length; ++i) ;
+
+                        Console.WriteLine("{0,2}. {1}", i, names[i]);
+                    }
+                }
+            }
+        }
+        namespace Lab06questionsn7
+        {
+            class Program
+            {
+                static void Main(string[] args)
+                {
+
+                    string[] names = new string[5] { "Al Dente", "Anna Graham", "Earle Bird", "Ginger Rayle", "Iona Ford" };
+                    int i = 0;
+                    {
+                        foreach (string name in names)
+
+                            Console.WriteLine("{0,2}. {1}", i, names[i]);
+                    }
+                }
             }
 
         }
     }
 }
-
-
-// 2. Both if single and while repetition statements share the similarity in which they must evaluate if a given value is either true or false. Requiring they meet a certain condition in order for them to stop executing code. They are different because the “if” condition only does what it is told to, then stops. While the “while” condition repeats over and over until it hits its loop termination. 
+//1.A one-dimensional array p contains four elements.  The array access expressions to access each of the elements in p are ____[0]___, __[1]_____,___[2]____ and ____[3]__.
